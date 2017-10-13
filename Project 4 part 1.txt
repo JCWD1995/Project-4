@@ -1,0 +1,9 @@
+{
+echo "PS1=\"\033[1;32m[\w]\$ \""
+echo "PATH=\"\$PATH:.\""
+echo alias dir=\"ls -l\"
+echo alias cls=clear
+echo who
+echo alias rm=\"rm -i\"
+echo set -o noclobber
+} >> .bash_profile
