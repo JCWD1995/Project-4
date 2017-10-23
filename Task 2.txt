@@ -1,0 +1,7 @@
+/home/links
+suspend
+{sleep 60 ; sleep 60 ; ls -alR / > flist &}
+fg %-
+suspend
+kill -9 $!
+cat flist || echo "Not done yet!"
